@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="Ini adalah website untuk jasa foto dan video live streaming, dokumentasi, dan sosial media manajemen"
+      name="description"
+    />
+    <meta content="jasa live streaming, jasa dokumentasi, jasa manajemen sosial media, visual pintar" name="keywords" />
+    <title>Visual Pintar</title>
+    <!-- Favicons -->
+    <link href="assets/img/PINTAR_KETUPAT_BIRU.png" rel="icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+      .video-thumbnail {
+        position: relative;
+        cursor: pointer;
+      }
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: red;
+        font-size: 48px;
+      }
+      #map {
+        height: 500px;
+      }
+    </style>
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-sm-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/main-logo.png" />
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="index.html">Beranda<br /></a>
+            </li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li class="dropdown">
+              <a href="#services"><span>Layanan Kami</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li class="dropdown">
+                  <a href="#"><span>Detail Layanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <!-- <li><a href="layanan-dokumentasi.html">Dokumentasi</a></li> -->
+                    <li><a href="layanan-media-sosial-manajemen.html">Sosial Media Manajemen</a></li>
+                    <li><a href="layanan-live-streaming.html">Live Streaming</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#pricing">Harga</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
+      </div>
+    </header>
+    <main class="main">
+      <section id="hero" class="hero section dark-background">
+        <img src="assets/img/bg-hero-live-streaming.png" alt="" data-aos="fade-in" />
+
+        <div class="container">
+          <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-xl-9 col-lg-8">
+              <h2>Live Streaming Berkualitas Dengan <span>Visual</span> Pintar.</h2>
+              <p>kami adalah tim profesional dokumentasi live streaming</p>
+            </div>
+            <div class="WA row mt-5">
+              <div class="col-12 text-center">
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281311401915&text=Hi,Admin. Saya tertarik membeli jasa anda. Boleh tanya-tanya dulu?"
+                  class="btn btn-outline-primary">Hubungi Visual Pintar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section Live Streaming -->
+      <section id="about" class="about section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-6">
+              <img src="assets/img/about.jpg" class="img-fluid" alt="" width="450px" />
+            </div>
+            <div class="col-lg-6 content">
+              <h3>Apa itu live streaming?</h3>
+              <p>Live streaming adalah cara menyiarkan konten secara langsung/real time kepada penonton.</p>
+              <p>
+                Kamu mungkin sering melihatnya di TV sebagai acara live. Sekarang, dengan teknologi digital, siapa pun
+                bisa melakukan live streaming tanpa perlu perusahaan media.
+              </p>
+              <p>
+                Platform seperti YouTube Live, Instagram Live, Zoom, Facebook Live, dan Google Meet memudahkan kita
+                untuk melakukan live streaming
+              </p>
+              <p>
+                Untuk hasil yang PROPER dengan video Full HD dan audio jernih, diperlukan perlengkapan seperti kamera
+                shooting, sound system, mic wireless, mixer, dan crew profesional.
+              </p>
+              <h3 style="padding-top: 2.5rem;">Masih bingung?</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section Live Streaming -->
+
+      <!-- Clients Section -->
+      <section id="clients" class="clients section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 40
+                  },
+                  "480": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 60
+                  },
+                  "640": {
+                    "slidesPerView": 4,
+                    "spaceBetween": 80
+                  },
+                  "992": {
+                    "slidesPerView": 6,
+                    "spaceBetween": 120
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide"><img src="assets/img/clients/client-bmt.png" class="img-fluid" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/clients/client-talk.png" class="img-fluid" alt="" /></div>
+              <div class="swiper-slide">
+                <img src="assets/img/clients/client-notarisku.svg" class="img-fluid" alt="" />
+              </div>
+              <div class="swiper-slide"><img src="assets/img/clients/client-nena.png" class="img-fluid" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/clients/8.svg" class="img-fluid" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/clients/client-bmt.png" class="img-fluid" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/clients/client-talk.png" class="img-fluid" alt="" /></div>
+              <div class="swiper-slide">
+                <img src="assets/img/clients/client-notarisku.svg" class="img-fluid" alt="" />
+              </div>
+              <div class="swiper-slide"><img src="assets/img/clients/client-nena.png" class="img-fluid" alt="" /></div>
+              <div class="swiper-slide"><img src="assets/img/clients/8.svg" class="img-fluid" alt="" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- /Clients Section -->
+
+      <a href="a"></a>
+      <!-- Portfolio Section -->
+
+      <!-- /Portfolio Section -->
+
+      <!-- Alur kerja -->
+      <section class="alur-kerja dark-background">
+        <h3 class="alur-title">
+          <span class="bordered-title">Alur Kerja <span class="highlight">Live Streaming</span></span>
+        </h3>
+        <div class="alur-container">
+          <img src="assets/img/alur-kerja-livestreaming.png" alt="Alur Kerja Live Streaming" class="alur-image" />
+        </div>
+      </section>
+      <!-- /Alur Kerja -->
+
+      <!-- Keunggulan Kami -->
+      <section class="keunggulan-live py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2>KENAPA HARUS MEMILIH <span class="">JASA STREAMING</span> KAMI?</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="card border-0 shadow-sm text-center h-100">
+                <div class="card-body">
+                  <div class="icon mb-3">
+                    <i class="bi bi-check-circle text-primary" style="font-size: 2rem"></i>
+                  </div>
+                  <h5 class="card-title fw-bold">Berpengalaman</h5>
+                  <p class="card-text">
+                    Lebih dari 10 tahun kami mengelola jasa streaming, selalu mengikuti tren terbaru untuk memastikan
+                    kualitas yang terbaik bagi Anda.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card border-0 shadow-sm text-center h-100">
+                <div class="card-body">
+                  <div class="icon mb-3">
+                    <i class="bi bi-check-circle text-primary" style="font-size: 2rem"></i>
+                  </div>
+                  <h5 class="card-title fw-bold">Multi-Platform Streaming</h5>
+                  <p class="card-text">
+                    Kami siap siaran live streaming di berbagai platform, termasuk Zoom dan YouTube, memastikan konten
+                    Anda bisa dinikmati secara luas oleh audiens Anda.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card border-0 shadow-sm text-center h-100">
+                <div class="card-body">
+                  <div class="icon mb-3">
+                    <i class="bi bi-check-circle text-primary" style="font-size: 2rem"></i>
+                  </div>
+                  <h5 class="card-title fw-bold">Portofolio Terpercaya</h5>
+                  <p class="card-text">
+                    Kami dipercaya oleh perusahaan ternama dan telah diakui secara internasional, dengan hasil yang
+                    sudah memuaskan.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card border-0 shadow-sm text-center h-100">
+                <div class="card-body">
+                  <div class="icon mb-3">
+                    <i class="bi bi-check-circle text-primary" style="font-size: 2rem"></i>
+                  </div>
+                  <h5 class="card-title fw-bold">Konsultasi Gratis</h5>
+                  <p class="card-text">
+                    Kami siap membantu Anda merencanakan live streaming, konsultasi gratis kapan saja.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Keunggulan Kami -->
+
+      <!-- Pricing Section 1 -->
+      <section id="pricing" class="pricing section light-background bg-secondary bg-opacity-10">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>visual pintar</h2>
+          <p>LIVE STREAMING ONLINE</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pricing-item featured d-flex flex-column">
+                <h3>STREAMING ONLINE FAVORITE</h3>
+                <h4><sup>Rp</sup>4.399.000</h4>
+                <ul class="flex-grow-1">
+                  <li><i class="bi bi-check"></i> <span>1 Unit Kamera</span></li>
+                  <li><i class="bi bi-check"></i> <span>Audio, Mixer, Soundcard</span></li>
+                  <li><i class="bi bi-check"></i> <span>Operator Streaming</span></li>
+                  <li><i class="bi bi-check"></i> <span>1 Operator Kamera</span></li>
+                  <li><i class="bi bi-check"></i> <span>Live Youtube, Zoom, Instagram</span></li>
+                  <li><i class="bi bi-check"></i> <span>PC Streaming</span></li>
+                  <li><i class="bi bi-check"></i> <span>Durasi 4 jam</span></li>
+                  <li>
+                    <i class="bi bi-x"></i> <span><del>Rekaman</del></span>
+                  </li>
+                  <li>
+                    <i class="bi bi-x"></i> <span><del>Internet Backup</del></span>
+                  </li>
+                  <br />
+                  <li><i class="bi bi-exclamation"></i> <span>Tidak termasuk sound system</span></li>
+                  <li>
+                    <i class="bi bi-exclamation"></i> <span>Paket dengan live lebih dari 3 camera harus meeting</span>
+                  </li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281311401915&text=Hi,Admin. Saya tertarik membeli Streaming YouTube Virtual Wedding. Boleh tanya-tanya dulu?"
+                  class="btn btn-outline-primary"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pricing-item featured d-flex flex-column">
+                <h3>STREAMING ONLINE PLUS</h3>
+                <h4><sup>Rp</sup>6.799.000</h4>
+                <ul class="flex-grow-1">
+                  <li><i class="bi bi-check"></i> <span>2 Unit Kamera</span></li>
+                  <li><i class="bi bi-check"></i> <span>Audio, Mixer, Soundcard</span></li>
+                  <li><i class="bi bi-check"></i> <span>Operator Streaming</span></li>
+                  <li><i class="bi bi-check"></i> <span>2 Operator Kamera</span></li>
+                  <li><i class="bi bi-check"></i> <span>Live Youtube, Zoom, Instagram</span></li>
+                  <li><i class="bi bi-check"></i> <span>PC Streaming</span></li>
+                  <li><i class="bi bi-check"></i> <span>Durasi 4 jam</span></li>
+                  <li><i class="bi bi-check"></i> <span>Rekaman</span></li>
+                  <li><i class="bi bi-check"></i> <span>Interent Backup</span></li>
+                  <br />
+                  <li><i class="bi bi-exclamation"></i> <span>Tidak termasuk sound system</span></li>
+                  <li>
+                    <i class="bi bi-exclamation"></i> <span>Paket dengan live lebih dari 3 camera harus meeting</span>
+                  </li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281311401915&text=Hi,Admin. Saya tertarik membeli Streaming YouTube Virtual Wedding. Boleh tanya-tanya dulu?"
+                  class="btn btn-outline-primary"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pricing-item featured d-flex flex-column">
+                <h3>STREAMING ONLINE EXCLUSIVE</h3>
+                <h4><sup>Rp</sup>7.999.000</h4>
+                <ul class="flex-grow-1">
+                  <li><i class="bi bi-check"></i> <span>3 Unit Kamera</span></li>
+                  <li><i class="bi bi-check"></i> <span>Audio, Mixer, Soundcard</span></li>
+                  <li><i class="bi bi-check"></i> <span>Operator Streaming</span></li>
+                  <li><i class="bi bi-check"></i> <span>3 Operator Kamera</span></li>
+                  <li><i class="bi bi-check"></i> <span>Live Youtube, Zoom, Instagram</span></li>
+                  <li><i class="bi bi-check"></i> <span>PC Streaming</span></li>
+                  <li><i class="bi bi-check"></i> <span>Durasi 6 jam</span></li>
+                  <li><i class="bi bi-check"></i> <span>Rekaman</span></li>
+                  <li><i class="bi bi-check"></i> <span>Internet Backup</span></li>
+                  <br />
+                  <li><i class="bi bi-exclamation"></i> <span>Tidak termasuk sound system</span></li>
+                  <li>
+                    <i class="bi bi-exclamation"></i> <span>Paket dengan live lebih dari 3 camera harus meeting</span>
+                  </li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281311401915&text=Hi,Admin. Saya tertarik membeli Streaming YouTube Virtual Wedding. Boleh tanya-tanya dulu?"
+                  class="btn btn-outline-primary"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+          </div>
+        </div>
+      </section>
+
+      <!-- /Pricing Section 1 -->
+
+      <!-- Pricing Section 2 -->
+      <section id="pricing" class="pricing section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>visual pintar</h2>
+          <p>LIVE STREAMING OFFLINE</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pricing-item featured d-flex flex-column">
+                <h3>STREAMING OFFLINE FAVORITE</h3>
+                <h4><sup>Rp</sup>3.899.000<span></span></h4>
+                <ul class="flex-grow-1">
+                  <li><i class="bi bi-check"></i> <span>1 Kamera</span></li>
+                  <li><i class="bi bi-check"></i> <span>Audio, Mixer, Sound Card</span></li>
+                  <li><i class="bi bi-check"></i> <span>Operator Streaming</span></li>
+                  <li><i class="bi bi-check"></i> <span>1 Operator Kamera</span></li>
+                  <li><i class="bi bi-check"></i> <span>PC Streaming</span></li>
+                  <li><i class="bi bi-check"></i> <span>Durasi 4 jam</span></li>
+                  <li>
+                    <i class="bi bi-x"></i> <span><del>Rekaman</del></span>
+                  </li>
+                  <br />
+                  <li><i class="bi bi-exclamation"></i> <span>Tidak termasuk sound system</span></li>
+                  <li>
+                    <i class="bi bi-exclamation"></i> <span>Paket dengan live lebih dari 3 camera harus meeting</span>
+                  </li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281311401915&text=Hi,Admin. Saya tertarik membeli Streaming Zoom Virtual Event. Boleh tanya-tanya dulu?"
+                  class="btn btn-outline-primary"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pricing-item featured d-flex flex-column">
+                <h3>STREAMING OFFLINE PLUS</h3>
+                <h4><sup>Rp</sup>6.299.000<span></span></h4>
+                <ul class="flex-grow-1">
+                  <li><i class="bi bi-check"></i> <span>2 Kamera</span></li>
+                  <li><i class="bi bi-check"></i> <span>Audio, Mixer, Sound Card</span></li>
+                  <li><i class="bi bi-check"></i> <span>Operator Streaming</span></li>
+                  <li><i class="bi bi-check"></i> <span>2 Operator Kamera</span></li>
+                  <li><i class="bi bi-check"></i> <span>PC Streaming</span></li>
+                  <li><i class="bi bi-check"></i> <span>Durasi 4 jam</span></li>
+                  <li><i class="bi bi-check"></i> <span>Rekaman</span></li>
+                  <br />
+                  <li><i class="bi bi-exclamation"></i> <span>Tidak termasuk sound system</span></li>
+                  <li>
+                    <i class="bi bi-exclamation"></i> <span>Paket dengan live lebih dari 3 camera harus meeting</span>
+                  </li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281311401915&text=Hi,Admin. Saya tertarik membeli Streaming Zoom Virtual Event. Boleh tanya-tanya dulu?"
+                  class="btn btn-outline-primary"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pricing-item featured d-flex flex-column">
+                <h3>STREAMING OFFLINE EXCLUSIVE</h3>
+                <h4><sup>Rp</sup>7.499.000<span></span></h4>
+                <ul class="flex-grow-1">
+                  <li><i class="bi bi-check"></i> <span>3 Kamera</span></li>
+                  <li><i class="bi bi-check"></i> <span>Audio, Mixer, Sound Card</span></li>
+                  <li><i class="bi bi-check"></i> <span>Operator Streaming</span></li>
+                  <li><i class="bi bi-check"></i> <span>3 Operator Kamera</span></li>
+                  <li><i class="bi bi-check"></i> <span>PC Streaming</span></li>
+                  <li><i class="bi bi-check"></i> <span>Durasi 6 jam</span></li>
+                  <li><i class="bi bi-check"></i> <span>Rekaman</span></li>
+                  <br />
+                  <li><i class="bi bi-exclamation"></i> <span>Tidak termasuk sound system</span></li>
+                  <li>
+                    <i class="bi bi-exclamation"></i> <span>Paket dengan live lebih dari 3 camera harus meeting</span>
+                  </li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281311401915&text=Hi,Admin. Saya tertarik membeli Streaming Zoom Virtual Event. Boleh tanya-tanya dulu?"
+                  class="btn btn-outline-primary"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+          </div>
+        </div>
+      </section>
+
+      <!-- <div class="container mt-5">
+        <div class="alert alert-info" role="alert">
+          <h4 class="alert-heading">Catatan</h4>
+          <hr />
+          <ul class="mb-0">
+            <li>Semua tidak termasuk sound system</li>
+            <li>Paket dengan live lebih dari 3 camera harus meeting</li>
+          </ul>
+        </div>
+      </div> -->
+      <!-- /Pricing Section 2 -->
+
+      <!-- portfolio start -->
+       <section id="portfolio" class="portfolio section" style="padding: 50px;">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>visual pintar</h2>
+          <p>Portofolio Kami</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container mt-5">
+          <div class="row">
+            <!-- <div class="col-md-4 mb-4 portfolio-item">
+              <div class="card">
+                <div class="video-thumbnail" data-video-id="lWxnaHMSfMk">
+                  <img
+                    src="http://img.youtube.com/vi/lWxnaHMSfMk/0.jpg"
+                    class="card-img-top"
+                    alt="Wedding Cinematic"
+                  />
+                  <div class="play-button bi-play-btn-fill"></div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Wedding of Irfan & Intan</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="video-thumbnail" data-video-id="c3DSUMXKuZA">
+                  <img
+                    src="https://img.youtube.com/vi/c3DSUMXKuZA/0.jpg"
+                    class="card-img-top"
+                    alt="Wedding Cinematic"
+                  />
+                  <div class="play-button bi-play-btn-fill"></div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Wedding of Annga & Desi</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div class="video-thumbnail" data-video-id="4c84xd0pzBM">
+                  <img
+                    src="http://img.youtube.com/vi/4c84xd0pzBM/0.jpg"
+                    class="card-img-top"
+                    alt="Wedding Rumahan Cinematic"
+                  />
+                  <div class="play-button bi-play-btn-fill"></div>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Wedding Rumahan</h5>
+                </div>
+              </div>
+            </div> -->
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div>
+                  <img src="assets/img/notary-talks.jpg" class="card-img-top" alt="Workshop Notary. Foto CR:30" />
+                <div class="card-body">
+                  <h5 class="card-title">Workshop Online Notary Talks Kota Tangerang</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div>
+                  <img
+                    src="assets/img/nena-ngobrol-hukum.jpg"
+                    class="card-img-top"
+                    alt="Nena Ngobrol Hukum"
+                  />
+                <div class="card-body">
+                  <h5 class="card-title">Live Streaming Nena Ngobrol Hukum Kota Tangerang</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <div>
+                  <img
+                    src="assets/img/bmt-rukun-abadi.jpg"
+                    class="card-img-top"
+                    alt="Meeting Rukun Abadi"
+                  />
+                <div class="card-body">
+                  <h5 class="card-title">Meeting Online BMT Rukun Abadi Kota Tangerang</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       </section>
+      <!-- portfolio end -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>visual pintar</h2>
+          <p>Kontak Kami</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+            <iframe
+              style="border: 0; width: 100%; height: 270px"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2358.2457800747575!2d106.71359869291626!3d-6.2530785486109135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb0bf4690337%3A0xf800f16379b3e869!2sB328!5e0!3m2!1sid!2sid!4v1723693116095!5m2!1sid!2sid"
+              frameborder="0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <!-- End Google Maps -->
+          <div class="row justify-content-center gx-5 gy-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="info-item d-flex flex-column text-center" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Alamat</h3>
+                <p>Jl. Kepodang No.1, Jurang Mangu Barat, Kec. Pd. Aren, Kota Tangerang Selatan, Banten</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="info-item d-flex flex-column text-center" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-telephone"></i>
+                <h3>Telepon</h3>
+                <p>+62 851 7692 3354</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="info-item d-flex flex-column text-center" data-aos="fade-up" data-aos-delay="500">
+                <i class="bi bi-envelope"></i>
+                <h3>Email</h3>
+                <p>visualpintar@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- End Contact Form -->
+        </div>
+      </section>
+
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <!-- <span class="sitename">Visual Pintar</span> -->
+                <img src="assets/img/Logo Pintar.png" alt="Visual Pintar">
+              </a>
+              <div class="footer-contact pt-3">
+                <p>Alamat</p>
+                <p>Jl. Kepodang No.1, Jurang Mangu Barat, Kec. Pd. Aren, Kota Tangerang Selatan, Banten</p>
+                <p class="mt-3">
+                  <strong>Phone</strong> <span>+62 851 7692 3354</span></p>
+                <p><strong>Email</strong> <span>visualpintar@gmail.com</span></p>
+              </div>
+              <div class="social-links d-flex mt-4">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <a href="index.html"> Beranda</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#about"> Tentang Kami</a></li>
+                <!-- <li><i class="bi bi-chevron-right"></i> <a href="#services"> Layanan Kami</a></li> -->
+                <li><i class="bi bi-chevron-right"></i> <a href="#portfolio"> Portfolio</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#pricing"> Harga</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#contact"> Kontak</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Layanan Kami</h4>
+              <ul>
+                <!-- <li><i class="bi bi-chevron-right"></i> <a href="#"> Dokumentasi</a></li> -->
+                <li><i class="bi bi-chevron-right"></i> <a href="#"> Sosial media Manajemen</a></li>
+                <li><i class="bi bi-chevron-right"></i> <a href="#"> Live Streaming</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container text-center">
+          <p>
+            © <span>Copyright</span> <strong class="px-1 sitename">visualpintar</strong>
+            <span>All Rights Reserved</span>
+          </p>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Designed by <a href="#">ictpintar</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

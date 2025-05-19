@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="Ini adalah website untuk jasa foto dan video live streaming, dokumentasi, dan sosial media manajemen"
+      name="description"
+    />
+    <meta
+      content="jasa live streaming, jasa dokumentasi, jasa manajemen sosial media, visual pintar"
+      name="keywords"
+    />
+    <title>Visual Pintar</title>
+    <!-- Favicons -->
+    <link href="assets/img/PINTAR_KETUPAT_BIRU.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <style>
+      .video-thumbnail {
+        position: relative;
+        cursor: pointer;
+      }
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: red;
+        font-size: 48px;
+      }
+      #map {
+        height: 500px;
+      }
+    </style>
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-sm-between"
+      >
+        <a
+          href="index.html"
+          class="logo d-flex align-items-center me-auto me-lg-0"
+        >
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/main-logo.png" />
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html">Beranda<br /></a></li>
+            <li><a href="#about">Tentang Kami</a></li>
+            <li class="dropdown"><a href="#services"><span>Layanan Kami</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li class="dropdown"><a href="#"><span>Detail Layanan</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                  <ul>
+                    <!-- <li><a href="layanan-dokumentasi.html">Dokumentasi</a></li> -->
+                    <li>
+                      <a href="layanan-media-sosial-manajemen.html">Sosial Media Manajemen</a>
+                    </li>
+                    <li>
+                      <a href="layanan-live-streaming.html">Live Streaming</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#pricing">Harga</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Kontak</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
+      </div>
+    </header>
+    <main class="main">
+      <section id="hero" class="hero section dark-background">
+        <img src="assets/img/bg-hero-smm.png" alt="" data-aos="fade-in" />
+
+        <div class="container">
+          <div
+            class="row justify-content-center text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="col-xl-9 col-lg-8">
+              <h2>
+                Solusi Management Social Media Dengan
+                <span>Visual</span> Pintar.
+              </h2>
+              <p>kami adalah tim profesional dalam fotografi dan videografi</p>
+            </div>
+            <div class="WA row mt-4">
+              <div class="col-12 text-center">
+                <a href="https://api.whatsapp.com/send?phone=6281311401915&text=Hi,Admin. Saya tertarik membeli jasa anda. Boleh tanya-tanya dulu?"
+                  class="btn btn-outline-primary">Hubungi Visual Pintar</a >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="title-client">
+        <div class="container">
+          <div class="d-flex justify-content-center text-center">
+            <h5>Anda Juga Layak Mendapatkan Kepuasan Seperti Mereka!</h5>
+          </div>
+        </div>
+      </section>
+      <!-- Clients Section -->
+      <section id="clients" class="clients section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 2,
+                    "spaceBetween": 40
+                  },
+                  "480": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 60
+                  },
+                  "640": {
+                    "slidesPerView": 4,
+                    "spaceBetween": 80
+                  },
+                  "992": {
+                    "slidesPerView": 6,
+                    "spaceBetween": 120
+                  }
+                }
+              }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-bmt.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-talk.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-bmt.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-talk.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-bmt.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-talk.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/img/clients/client-talk.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- /Clients Section -->
+
+      <!-- About Section Dokumentasi -->
+      <section id="about" class="about section">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4">
+            <div class="col-lg-6">
+              <img src="assets/img/ABOUT-US.png" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-6 content">
+              <h3>Apa itu Penyedia Konten Sosial Media?</h3>
+              <p>
+                Jasa Penyedia Konten Sosial Media membantu membuat dan mengelola
+                konten untuk platform seperti Instagram, Facebook, dan TikTok.
+                Mereka menyediakan berbagai jenis konten seperti gambar, video,
+                dan teks yang menarik dan sesuai dengan brand Anda.
+              </p>
+              <p>
+                Layanan ini bertujuan untuk memastikan akun media sosial Anda
+                tetap aktif dan menarik bagi audiens. Mereka mengatur jadwal
+                posting, meneliti hashtag dan tren terbaru, serta mengoptimalkan
+                konten untuk setiap platform.
+              </p>
+              <p>
+                Dengan menggunakan jasa ini, Anda bisa fokus pada bisnis inti
+                Anda sementara penyedia konten menangani semua aspek pembuatan
+                dan pengelolaan konten media sosial.
+              </p>
+              <p>
+                Untuk hasil yang PROPER dengan video Full HD dan audio jernih,
+                diperlukan perlengkapan seperti kamera shooting, sound system,
+                mic wireless, mixer, dan crew profesional.
+              </p>
+              <h3>Masih bingung?</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section Live Streaming -->
+
+      <!-- Keunggulan Kami -->
+      <section class="keunggulan-doku py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2>
+              KENAPA HARUS MEMILIH
+              <span class="">JASA SOSIAL MEDIA MANAJEMEN</span> KAMI?
+            </h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="card border-0 shadow-sm text-center h-100">
+                <div class="card-body">
+                  <div class="icon mb-3">
+                    <i
+                      class="bi bi-check-circle text-primary"
+                      style="font-size: 2rem"
+                    ></i>
+                  </div>
+                  <h5 class="card-title fw-bold">Berpengalaman</h5>
+                  <p class="card-text">
+                    Lebih dari 2 tahun kami mengelola akun media sosial, selalu
+                    mengikuti tren terbaru untuk memastikan engagement terbaik
+                    bagi bisnis Anda.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card border-0 shadow-sm text-center h-100">
+                <div class="card-body">
+                  <div class="icon mb-3">
+                    <i
+                      class="bi bi-check-circle text-primary"
+                      style="font-size: 2rem"
+                    ></i>
+                  </div>
+                  <h5 class="card-title fw-bold">Multi-Platform Expertise</h5>
+                  <p class="card-text">
+                    Kami ahli dalam mengelola berbagai platform media sosial,
+                    termasuk Instagram, Facebook, dan LinkedIn, memastikan
+                    konten Anda konsisten dan profesional di semua channel.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card border-0 shadow-sm text-center h-100">
+                <div class="card-body">
+                  <div class="icon mb-3">
+                    <i
+                      class="bi bi-check-circle text-primary"
+                      style="font-size: 2rem"
+                    ></i>
+                  </div>
+                  <h5 class="card-title fw-bold">Portfolio Terpercaya</h5>
+                  <p class="card-text">
+                    Kami dipercaya oleh brand ternama dan startup yang
+                    berkembang pesat, dengan hasil yang terbukti meningkatkan
+                    kehadiran online.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="card border-0 shadow-sm text-center h-100">
+                <div class="card-body">
+                  <div class="icon mb-3">
+                    <i
+                      class="bi bi-check-circle text-primary"
+                      style="font-size: 2rem"
+                    ></i>
+                  </div>
+                  <h5 class="card-title fw-bold">Konsultasi Gratis</h5>
+                  <p class="card-text">
+                    Kami siap membantu Anda memilih strategi media sosial yang
+                    tepat dengan konsultasi gratis kapan saja.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Keunggulan Kami -->
+
+<!-- Pricing Section -->
+      <section id="pricing" class="pricing section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>visual pintar</h2>
+          <p>Sosial Media Manajemen</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="pricing-item featured d-flex flex-column">
+                <h3>Pintar Silver</h3>
+                <h4><sup>Rp</sup>1.200.000<span> / bulan</span></h4>
+                <ul class="flex-grow-1">
+                  <li>
+                    <i class="bi bi-check"></i> <span>8 Desain Post</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <span>2 Video Reels</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <span>gratis konsultasi</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Strategi Digital Marketing</span>
+                  </li>
+                  <li><i class="bi bi-check"></i> <span>Ide Konten</span></li>
+                  <li><i class="bi bi-check"></i> <span>Copy Writing</span></li>
+                  <li>
+                    <i class="bi bi-check"></i> <span>Repost Berkala</span>
+                  </li>
+                  <li><i class="bi bi-x"></i> <span>2x Revisi</span></li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281311401915&text=Hi,Admin. Saya tertarik membeli Jasa Sosial Media Manajemen. Boleh tanya-tanya dulu?"
+                  class="btn btn-outline-primary"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pricing-item featured d-flex flex-column">
+                <h3>Pintar Gold</h3>
+                <h4><sup>Rp</sup>2.800.000<span> / bulan</span></h4>
+                <ul class="flex-grow-1">
+                  <li>
+                    <i class="bi bi-check"></i> <span>12 Desain Post</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <span>4 Video Reels</span>
+                  </li>
+                  <li><i class="bi bi-check"></i> <span>4x Story</span></li>
+                  <li>
+                    <i class="bi bi-check"></i> <span>Gratis konsultasi</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Strategi Digital Market</span>
+                  </li>
+                  <li><i class="bi bi-check"></i> <span>Ide Konten</span></li>
+                  <li><i class="bi bi-check"></i> <span>Copy Writing</span></li>
+                  <li>
+                    <i class="bi bi-check"></i> <span>Repost Berkala</span>
+                  </li>
+                  <li><i class="bi bi-check"></i> <span>2x Revisi </span></li>
+                  <li>
+                    <i class="bi bi-x"></i>
+                    <span>Bonus Konten Ucapan Hari Raya & Hari Raya Besar</span>
+                  </li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281311401915&text=Hi,Admin. Saya tertarik membeli Jasa Sosia Media Manajemen. Boleh tanya-tanya dulu?"
+                  class="btn btn-outline-primary"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+
+            <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pricing-item featured d-flex flex-column">
+                <h3>Pintar Platinum</h3>
+                <h4><sup>Rp</sup>4.200.000<span> / bulan</span></h4>
+                <ul class="flex-grow-1">
+                  <li>
+                    <i class="bi bi-check"></i> <span>18 Desain Post</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i> <span>6 Video Reels</span>
+                  </li>
+                  <li><i class="bi bi-check"></i> <span>8x Story</span></li>
+                  <li>
+                    <i class="bi bi-check"></i> <span>Gratis konsultasi</span>
+                  </li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span> Strategi Digital Market</span>
+                  </li>
+                  <li><i class="bi bi-check"></i> <span>Ide Konten</span></li>
+                  <li><i class="bi bi-check"></i> <span>Copy Writing</span></li>
+                  <li>
+                    <i class="bi bi-check"></i> <span>Repost Berkala</span>
+                  </li>
+                  <li><i class="bi bi-check"></i> <span>3x Revisi </span></li>
+                  <li>
+                    <i class="bi bi-check"></i>
+                    <span>Bonus Konten Ucapan Hari Raya & Hari Raya Besar</span>
+                  </li>
+                </ul>
+                <a
+                  href="https://api.whatsapp.com/send?phone=6281311401915&text=Hi,Admin. Saya tertarik membeli Jasa Sosial Media Manajemen. Boleh tanya-tanya dulu?"
+                  class="btn btn-outline-primary"
+                  >Pesan Sekarang</a
+                >
+              </div>
+            </div>
+            <!-- End Pricing Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Pricing Section -->
+
+
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section" style="padding: 50px">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>visual pintar</h2>
+          <p>Portfolio Kami</p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <!-- End Portfolio Filters -->
+
+            <div
+              class="row gy-4 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item dokumentasi"
+              >
+                <div class="portfolio-content h-100">
+                  <a
+                    href="assets/img/portfolio/portfolio-smm1.png"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox"
+                    ><img
+                      src="assets/img/portfolio/portfolio-smm1.png"
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+                  <div class="portfolio-info">
+                    <h4><a href="#" title="More Details">Portfolio 1</a></h4>
+                    <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item dokumentasi"
+              >
+                <div class="portfolio-content h-100">
+                  <a
+                    href="assets/img/portfolio/portfolio-smm2.png"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox"
+                    ><img
+                      src="assets/img/portfolio/portfolio-smm2.png"
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+                  <div class="portfolio-info">
+                    <h4><a href="#" title="More Details">Portfolio 2</a></h4>
+                    <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item dokumentasi"
+              >
+                <div class="portfolio-content h-100">
+                  <a
+                    href="assets/img/portfolio/portfolio-smm3.png"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox"
+                    ><img
+                      src="assets/img/portfolio/portfolio-smm3.png"
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+                  <div class="portfolio-info">
+                    <h4><a href="#" title="More Details">Portfolio 3</a></h4>
+                    <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item dokumentasi"
+              >
+                <div class="portfolio-content h-100">
+                  <a
+                    href="assets/img/portfolio/portfolio-smm4.png"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox"
+                    ><img
+                      src="assets/img/portfolio/portfolio-smm4.png"
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+                  <div class="portfolio-info">
+                    <h4><a href="#" title="More Details">Portfolio 4</a></h4>
+                    <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item dokumentasi"
+              >
+                <div class="portfolio-content h-100">
+                  <a
+                    href="assets/img/portfolio/portfolio-smm5.png"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox"
+                    ><img
+                      src="assets/img/portfolio/portfolio-smm5.png"
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+                  <div class="portfolio-info">
+                    <h4><a href="#" title="More Details">Portfolio 5</a></h4>
+                    <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item dokumentasi"
+              >
+                <div class="portfolio-content h-100">
+                  <a
+                    href="assets/img/portfolio/portfolio-smm6.png"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox"
+                    ><img
+                      src="assets/img/portfolio/portfolio-smm6.png"
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+                  <div class="portfolio-info">
+                    <h4><a href="#" title="More Details">Portfolio 6</a></h4>
+                    <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+
+              <div
+                class="col-lg-4 col-md-6 portfolio-item isotope-item dokumentasi"
+              >
+                <div class="portfolio-content h-100">
+                  <a
+                    href="assets/img/portfolio/portfolio-smm7.png"
+                    data-gallery="portfolio-gallery-app"
+                    class="glightbox"
+                    ><img
+                      src="assets/img/portfolio/portfolio-smm7.png  "
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+                  <div class="portfolio-info">
+                    <h4><a href="#" title="More Details">Portfolio 7</a></h4>
+                    <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
+                  </div>
+                </div>
+              </div>
+              <!-- End Portfolio Item -->
+            </div>
+
+            <!-- End Portfolio Container -->
+            <!-- <div class="row mt-4">
+              <div class="col-12 text-center">
+                <a href="#" class="btn btn-outline-primary">Cek Selengkapnya</a>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <section id="contact" class="contact section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>visual pintar</h2>
+          <p>Kontak Kami</p>
+        </div>
+        <!-- End Contact Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+            <iframe
+              style="border: 0; width: 100%; height: 270px"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2358.2457800747575!2d106.71359869291626!3d-6.2530785486109135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fb0bf4690337%3A0xf800f16379b3e869!2sB328!5e0!3m2!1sid!2sid!4v1723693116095!5m2!1sid!2sid"
+              frameborder="0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <!-- End Google Maps -->
+          <div class="row justify-content-center gx-5 gy-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div
+                class="info-item d-flex flex-column text-center"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <i class="bi bi-geo-alt"></i>
+                <h3>Alamat</h3>
+                <p>
+                  Jl. Kepodang No.1, Jurang Mangu Barat, Kec. Pd. Aren, Kota
+                  Tangerang Selatan, Banten
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div
+                class="info-item d-flex flex-column text-center"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <i class="bi bi-telephone"></i>
+                <h3>Telepon</h3>
+                <p>+62 851 7692 3354</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div
+                class="info-item d-flex flex-column text-center"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <i class="bi bi-envelope"></i>
+                <h3>Email</h3>
+                <p>visualpintar@gmail.com</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- End Contact Form -->
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-4 col-md-6 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <!-- <span class="sitename">Visual Pintar</span> -->
+                <img src="assets/img/Logo Pintar.png" alt="Visual Pintar" />
+              </a>
+              <div class="footer-contact pt-3">
+                <p>Alamat</p>
+                <p>
+                  Jl. Kepodang No.1, Jurang Mangu Barat, Kec. Pd. Aren, Kota
+                  Tangerang Selatan, Banten
+                </p>
+                <p class="mt-3">
+                  <strong>Phone</strong> <span>+62 851 7692 3354</span>
+                </p>
+                <p>
+                  <strong>Email</strong> <span>visualpintar@gmail.com</span>
+                </p>
+              </div>
+              <div class="social-links d-flex mt-4">
+                <a
+                  href="https://www.instagram.com/visualpintar?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="index.html"> Beranda</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#about"> Tentang Kami</a>
+                </li>
+                <!-- <li><i class="bi bi-chevron-right"></i> <a href="#services"> Layanan Kami</a></li> -->
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#portfolio"> Portfolio</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#pricing"> Harga</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#contact"> Kontak</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-3 footer-links">
+              <h4>Layanan Kami</h4>
+              <ul>
+                <!-- <li><i class="bi bi-chevron-right"></i> <a href="layanan-dokumentasi.html"> Dokumentasi</a></li> -->
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="layanan-media-sosial-manajemen.html">
+                    Sosial media Manajemen</a
+                  >
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="layanan-live-streaming.html"> Live Streaming</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container text-center">
+          <p>
+            © <span>Copyright</span>
+            <strong class="px-1 sitename">visualpintar</strong>
+            <span>All Rights Reserved</span>
+          </p>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Designed by <a href="#">ictpintar</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
